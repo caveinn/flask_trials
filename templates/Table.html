@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table{
+			margin-right: auto;
+			margin-left: auto;
+			border-collapse: collapse;
+			color: purple;
+			background-color: beige;
+			width:200px;
+			width:50%;
+
+		}
+
+		
+		
+		 th, td		{
+			border: 3px solid grey ;
+			text-align: center;
+		}
+
+	</style>
+	<title>Table</title>
+</head>
+
+<body>
+
+<table  >
+<thead>
+	<th>Character</th>
+	<th>Frequency</th>
+</thead>
+{%for k,v in sentanceCount.items()%}
+	<tr>
+		<td >{{k}}</td>
+		<td>{{v}}</td>
+	</tr>
+{%endfor%}
+</table>
+
+</body>
+
+</html>
